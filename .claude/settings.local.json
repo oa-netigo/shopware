@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init)",
+      "Bash(ddev config --project-type=shopware6 --docroot=public --php-version=8.3)",
+      "Bash(ddev start)",
+      "Bash(ddev composer create-project shopware/production --no-interaction)",
+      "Bash(ddev exec console system:install --basic-setup)",
+      "Bash(ddev exec bin/build-js.sh)",
+      "Bash(ddev exec console cache:clear)",
+      "Bash(ddev describe)"
+    ]
+  }
+}
